@@ -9,24 +9,42 @@ body {
 	
 }
 section{
-	width: 560px;
-	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-areas: 
+	"c a"
+	"d b"
+	"e b"
+	"f b"
+	;
 }
 #cat {
 	width: 250px;
 	height: 250px;
-	border: 2px solid dark-yellow;
+	border: 2px solid orange;
 	border-radius: 50%;
 }
-header {
+#a {
+	grid-area:a;
+	background-colour:
 	
 }
-aside {
-	width: 400px;
-	margin: 0 auto;
-	background-color: yellow;	
-	
+#b {
+	grid-area:b;
 }
-main {
-	
+#c {
+	grid-area:c;
+	background-color: yellow;
+}
+#d {
+	grid-area:d;
+	background-color: yellow;
+}
+#e {
+	grid-area:e;
+	background-color: yellow;
+}
+#f {
+	grid-area:f;
+	background-color: yellow;
 }

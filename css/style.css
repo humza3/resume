@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  font-family: arial;
+  color: #373737
 }
 body {	
 	width: 960px;
@@ -10,7 +12,7 @@ body {
 }
 section{
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
+	grid-template-columns: 288px 672px;
 	grid-template-areas: 
 	"c a"
 	"d b"
@@ -19,14 +21,14 @@ section{
 	;
 }
 #cat {
-	width: 250px;
-	height: 250px;
-	border: 2px solid orange;
+	width: 150px;
+	height: 150px;
+	margin:75px 70px;
+	border: 3px solid #C0B283;
 	border-radius: 50%;
 }
 #a {
 	grid-area:a;
-	background-colour:
 	
 }
 #b {
@@ -34,17 +36,36 @@ section{
 }
 #c {
 	grid-area:c;
-	background-color: yellow;
+	height:250px;
 }
 #d {
 	grid-area:d;
-	background-color: yellow;
 }
 #e {
 	grid-area:e;
-	background-color: yellow;
 }
 #f {
 	grid-area:f;
-	background-color: yellow;
+}
+
+#a, #b {
+	background-color: #f4f4f4;
+}
+
+#c, #d, #e, #f {
+	background-color: #dcd0c0;
+}
+
+.aside-title {
+	background-color: #373737;
+	color:#C0B283;
+	width: 288px;
+	height: 30px;
+	margin: 10px auto;
+}
+footer{
+	background-color: #373737;
+	color: #C0B283;
+	margin:0;
+	padding: 0;
 }

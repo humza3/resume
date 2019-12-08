@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: arial;
+  font-size: 12px;
   color: #373737
 }
 body {	
@@ -19,6 +20,11 @@ section{
 	"e b"
 	"f b"
 	;
+}
+
+ul li {
+	
+list-style-type: none;
 }
 #cat {
 	width: 150px;
@@ -39,13 +45,30 @@ section{
 	height:250px;
 }
 #d {
-	grid-area:d;
+	grid-area:d;		
 }
+#d ul{
+	padding-inline-start:0;
+}
+#d ul li{	
+	padding: 5px 30px;
+	text-align:center;
+}
+
+
 #e {
 	grid-area:e;
 }
+
+#e p {
+	padding: 10px 30px;
+	text-align:center;
+}
 #f {
 	grid-area:f;
+}
+#f img {
+	margin: 10px 9px;
 }
 
 #a, #b {
@@ -58,13 +81,21 @@ section{
 
 .aside-title {
 	background-color: #373737;
+	font-size:20px;
+	font-weight: 700;
 	color:#C0B283;
+	padding: 4px 0;
+	text-align: center;
 	width: 288px;
 	height: 30px;
 	margin: 10px auto;
 }
 footer{
 	background-color: #373737;
+	margin:0;
+	padding: 0;
+}
+footer p{
 	color: #C0B283;
 	margin:0;
 	padding: 0;

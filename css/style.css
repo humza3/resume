@@ -287,7 +287,7 @@ header nav h2 {
 }
 #b h3{
 	width: 100%;
-	margin: 4px 0px 0px 0px;
+	margin: 4px 0px 0px 5px;
 	
 }
 
@@ -296,7 +296,9 @@ header nav h2 {
 }
 
 #b li {
-	margin: 5px -20px;
+	margin: 5px 0px;
+	white-space: normal;
+	padding: 0 4px;
 
 }
 
